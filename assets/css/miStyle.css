@@ -1,0 +1,8 @@
+.imgHeroSection{
+    width: 45%;
+    height: 45vh;
+}
+
+.resultado, .grafico{
+    display: inline;
+}
