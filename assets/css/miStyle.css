@@ -1,8 +1,24 @@
-.imgHeroSection{
-    width: 45%;
-    height: 45vh;
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.imgHeroSection {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: auto;
 }
 
 .resultado, .grafico{
     display: inline;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
 }

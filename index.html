@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Encuentra información sobre tu superhéroe favorito.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Icono -->
@@ -26,56 +27,60 @@
 </head>
 
 <body>
+    <div class="wrapper">
+        <!-- navBar -->
+        <nav class="navbar navbar-light bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#">
+                    <img src="assets/img/sh2.jpg" alt="" width="30" height="24">
+                    SuperHero
+                </a>
+            </div>
+        </nav>
 
-    <!-- navBar -->
-    <nav class="navbar navbar-light bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand text-white" href="#">
-                <img src="/assets/img/sh2.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                SuperHero
-            </a>
-        </div>
-    </nav>
-
-    <!-- heroSection -->
-    <section class="miSeccionHero text-center">
-
-        <!-- inicio div container  -->
-        <div class="container">
-            <!-- inicio row -->
-            <div class="row">
-                <!-- inicio col -->
-                <div class="col">
-                    <img class="imgHeroSection mb-3 mt-3" src="/assets/img/sh1.jpg" alt="">
-                    <form class="text-start">
-                        <div class="mb-3">
-                            <h1 class="mt-3 mb-4">Encuentra a tu SuperHero</h1>
-                            <label for="validationCustom01" class="form-label text-secondary">Ingresa el numero del
-                                SuperHero a buscar</label>
-                            <input type="text" class="form-control" id="buscaSuperHero">
+        <!-- contenido principal -->
+        <div class="main-content">
+            <!-- heroSection -->
+            <section class="miSeccionHero text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <img class="imgHeroSection mb-3 mt-3" src="assets/img/sh1.jpg" alt="">
+                            <form class="text-start">
+                                <div class="mb-3">
+                                    <h1 class="mt-3 mb-4">Encuentra a tu SuperHero</h1>
+                                    <label for="validationCustom01" class="form-label text-secondary">
+                                        Ingresa el número del SuperHero a buscar
+                                    </label>
+                                    <input type="text" class="form-control" id="buscaSuperHero">
+                                </div>
+                                <button type="button" class="btn btn-primary miBtn">Buscar</button>
+                            </form>
                         </div>
-                        <button type="button" class="btn btn-primary miBtn">Buscar</button>
-                    </form>
-                </div><!-- fin col -->
-            </div><!-- fin row -->
-        </div><!-- fin div container -->
+                    </div>
+                </div>
 
-        <!-- inicio div container  -->
-        <div class="container">
-            <!-- inicio row -->
-            <div class="row">
-                <!-- inicio col -->
-                <div class="col">
-                    <div class="resultado"></div>
-                </div><!-- fin col -->
-                <!-- inicio col -->
-                <div class="col">
-                    <div id="chartContainer" class="grafico mt-4 container" style="height: 370px; width: 100%;"></div>
-                </div><!-- fin col -->
-            </div><!-- fin row -->
-        </div><!-- fin div container -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="resultado"></div>
+                        </div>
+                        <div class="col">
+                            <div id="chartContainer" class="grafico mt-4 container"
+                                style="height: 370px; width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div> <!-- cierre .main-content -->
 
-    </section>
+        <!-- footer fijo -->
+        <footer class="text-center p-3 bg-dark text-white">
+            © 2025 SuperHero App
+        </footer>
+    </div> <!-- cierre .wrapper -->
+
+
 
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
