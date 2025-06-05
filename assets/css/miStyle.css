@@ -1,15 +1,49 @@
-html, body {
-    height: 100%;
-    margin: 0;
+body {
+    font-family: 'Bangers', cursive;
+    background: linear-gradient(to right, #f9d423, #ff4e50);
+    color: #222;
 }
+
+.comic-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #000;
+    box-shadow: 4px 4px 0px #ffcc00;
+    margin: 20px auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.comic-image:hover {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+.comic-btn {
+    background-color: #ffcc00;
+    color: #000;
+    border: 3px solid #000;
+    box-shadow: 3px 3px 0px #000;
+    font-size: 1.2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.comic-btn:hover {
+    background-color: #000;
+    color: #ffcc00;
+    box-shadow: 0px 0px 15px #fff000;
+}
+
 .imgHeroSection {
-    max-width: 300px;
-    height: auto;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     display: block;
     margin: auto;
 }
 
-.resultado, .grafico{
+.grafico {
     display: inline;
 }
 
